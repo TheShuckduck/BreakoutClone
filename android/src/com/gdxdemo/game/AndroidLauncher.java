@@ -1,16 +1,16 @@
-package com.robertsrewards.ball;
+package com.gdxdemo.game;
 
 import android.os.Bundle;
 
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
-import com.robertsrewards.ball.MainGame;
+import com.gdxdemo.game.GdxDemoGame;
 
 public class AndroidLauncher extends AndroidApplication {
 	@Override
 	protected void onCreate (Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
-		initialize(new BallGame(), config);
+		initialize(new GdxDemoGame(), config);
 	}
 }

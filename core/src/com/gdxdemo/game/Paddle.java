@@ -1,5 +1,4 @@
-package com.robertsrewards.ball;
-
+package com.gdxdemo.game;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;

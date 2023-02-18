@@ -1,6 +1,6 @@
 android {
-    buildToolsVersion "33.0.0"
-    compileSdkVersion 32
+    buildToolsVersion "33.0.2"
+    compileSdkVersion 33
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -14,12 +14,14 @@ android {
 
     }
     packagingOptions {
-        exclude 'META-INF/robovm/ios/robovm.xml'
+        resources {
+            excludes += ['META-INF/robovm/ios/robovm.xml']
+        }
     }
     defaultConfig {
-        applicationId "com.robertsrewards.ball"
+        applicationId "com.gdxdemo.game"
         minSdkVersion 14
-        targetSdkVersion 32
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
@@ -82,7 +84,7 @@ task run(type: Exec) {
     }
 
     def adb = path + "/platform-tools/adb"
-    commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.robertsrewards.ball/com.robertsrewards.ball.AndroidLauncher'
+    commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.gdxdemo.game/com.gdxdemo.game.AndroidLauncher'
 }
 
 eclipse.project.name = appName + "-android"

@@ -1,4 +1,4 @@
-package com.robertsrewards.ball;
+package com.gdxdemo.game;
 
 
 import com.badlogic.gdx.Gdx;
@@ -65,4 +65,5 @@ public class Ball {
         ySpeed = - ySpeed;
     }
 }
+
 

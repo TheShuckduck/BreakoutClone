@@ -1,4 +1,4 @@
-package com.robertsrewards.ball;
+package com.gdxdemo.game;
 
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
@@ -26,4 +26,3 @@ public class Block implements CollidesWith{
         }
     }
 }
-
